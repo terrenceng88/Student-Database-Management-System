@@ -465,7 +465,7 @@ int main()
   cout<<"\n\n\t1. Result Calculation System";
   cout<<"\n\n\t2. Student Database Management System";
   cout<<"\n\n\t3. Exit";
-  cout<<"\n\n\n\n\n\tPlease Select Your Option (1-3)";
+  cout<<"\n\n\n\n\n\tPlease Select Your Option (1-3) then press Enter: ";
   cin>>ch;
   switch(ch)
   {
