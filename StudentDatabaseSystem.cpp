@@ -449,8 +449,8 @@ void display_all();
 
 int main()
 {
-  system("CLS");
-  system("color B1");
+  system("CLS"); //clears the output screen
+  system("color B1"); //makes the output screen light aqua and letters light blue (first char = background, second char = foreground)
   char ch;
   student std_obj;
   cout.setf(ios::fixed|ios::showpoint);
