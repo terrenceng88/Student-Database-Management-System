@@ -11,7 +11,7 @@ using namespace std;
 
 int RollNoToBeUpdated=0;
 
-class student
+class student //holds student information
 {
       private:
               char Student_Name[50];
@@ -25,9 +25,9 @@ class student
               
               
       public:
-             student();
-             void getdata();
-             void CheckForDuplicationInFile();
+             student(); 
+             void getdata(); 
+             void CheckForDuplicationInFile(); 
              void showdata();// this function displays student data on the output screen
              void TabularDisplay();// is used to display the result of all students in the form of a table
              int GetStudentRollNo();// returns the roll no. of the current student
@@ -420,9 +420,9 @@ void student::Display_Class_Result()
      /*if file opens, 
      1. system will give heading of class result on output screen*/
      cout<<"\n\n\t\tALL CLASS RESULT \n\n";
-     cout<<"==========================================================\n";
+     cout<<"========================================================================\n";
      cout<<"R.No        Name          Soc  Stats  M     E       CS    %age    Grade"<<endl;
-     cout<<"==========================================================\n";
+     cout<<"========================================================================\n";
      
      /*2. use a while loop and it will run as long as it is reading records from the 
      file student.dat*/
@@ -453,10 +453,10 @@ int main()
   system("color B1"); //makes the output screen light aqua and letters light blue (first char = background, second char = foreground)
   char ch;
   student std_obj;
-  cout.setf(ios::fixed|ios::showpoint);
+  cout.setf(ios::fixed|ios::showpoint); //the number of digits after the point are fixed and to show the points
   cout<<setprecision(2); // program outputs decimal number to two decimal places*/
   intro();
-  do
+  do //do-while loop to constantly display the home screen until the user exits the system
   {
   system("cls");
   intro();
