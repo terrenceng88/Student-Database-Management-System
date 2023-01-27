@@ -488,6 +488,7 @@ int main()
   return 0;   // main ends here
 }
 
+//Introduction Message displayed at beginning
 void intro()
 {
   cout<<"\n\n\n****  WELCOME TO STUDENT DATABASE MANAGEMENT AND RESULT CALCULATION SYSTEM  ****\n\n";
