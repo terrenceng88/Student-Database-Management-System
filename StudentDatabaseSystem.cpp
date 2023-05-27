@@ -49,7 +49,7 @@ void student::getdata()
      // here we will check for duplication of roll no in the file
      //for udpate..if(RollNoToBeUpdated!=Roll_no)// 1664!=1664 
      if(RollNoToBeUpdated!=Roll_no)
-     CheckForDuplicationInFile();
+     CheckForDuplicationInFile(); //checks for duplicate files
      
      if(flag==true)
      {
@@ -458,8 +458,8 @@ int main()
   intro();
   do //do-while loop to constantly display the home screen until the user exits the system
   {
-  system("cls");
-  intro();
+  system("cls"); //runs cls in the system to clear out the output screen
+  intro(); //prints into message
   
   cout<<"\n\n\n\t\t\t\tHOME SCREEN\n\n\n";
   cout<<"\n\n\t1. Result Calculation System";
